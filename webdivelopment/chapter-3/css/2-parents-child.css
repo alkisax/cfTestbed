@@ -1,0 +1,28 @@
+img{
+    width: 500px;
+    height: auto;
+}
+
+/* oloi oi amesoi apogonoi toy ul */
+ul > li {
+    color: red;
+}
+
+/* απο τους αμεσους απογωνους του ul πάρε το πρότο παιδι */
+ul > li:first-child{
+    color: blue;
+}
+
+/* ola ektos apo to proto */
+ul > li:not(:first-child) {
+    background-color: aquamarine;
+}
+
+/* to amesow epomeno apo to h1 */
+h1+p{
+    color: blue;
+}
+
+img ~ p {
+    background-color: green;
+}

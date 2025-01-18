@@ -1,0 +1,20 @@
+
+*{
+
+}
+/* kaposw etsi ua ftiaxneiw ena menu */
+.container{
+    /* stamatise na einai block ta periexomena kai egina inline */
+    display: flex;
+    height: 200px;
+    border: 1px solid black;
+    /* ayta amono otan exo display flex */
+    /* peire ton xoro kai ton mirase */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-items: start; */
+    /* align-items: end; */
+
+}

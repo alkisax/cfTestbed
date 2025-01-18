@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 700;
+    border-collapse: collapse;
+}
+
+th {
+    height: 70px;    
+}
+
+thead {
+    background-color: lightgray;
+}
+
+td {
+    text-align: center;
+}
+
+/* hia na kano mia leykh kai mia gri */
+tr:nth-child(even) {
+    background-color: green;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}

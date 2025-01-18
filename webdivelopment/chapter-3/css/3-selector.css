@@ -1,0 +1,25 @@
+/* ola ta h2 me atribute id opos kai ola ta p me atribute id */
+h2[id], p[id] {
+    background-color: aquamarine;
+}
+
+/* ola ta a poy periexoyn mesa href="#" */
+a[href="#"] {
+    background-color: blueviolet;
+}
+
+
+/* ola ta * elements poy exoyn klass kai ayta ksekinane ^ me thn leksi info */
+*[class^="info"] {
+    color: green;
+}
+
+/* osa periexoyn class kai ayto text */
+*[class*="text"] {
+    background-color: burlywood;
+}
+
+/* ola ta he ta opoia exoyn class kai ayto teleionei me title */
+h2[class$="title"]{
+    font-style: italic;
+}

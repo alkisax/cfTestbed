@@ -1,0 +1,16 @@
+
+
+div[class^=box]{
+    width: 300px;
+    height: 100px;
+    margin: 5px 5px;
+    background-color: lightblue;
+    /* display: flex; */
+}
+.container{
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,12 @@
+/* ayto poy ekane sto konteiner klhronom;ithike kai sta child element. genikow etsi e;inai me oti afora thn typografia */
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: red;
+    text-align: justify;
+    border: 1px solid black;
+}
+p{
+    border: 1px solid green;
+}

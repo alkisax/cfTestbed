@@ -1,0 +1,55 @@
+.city {
+    width: 300px;
+    height: auto;
+}
+
+.img-rounded {
+    border-radius: 30px;
+}
+
+.img-circle {
+    border-radius:  50%;
+    /* o logos poy egine san elipsi kai oxi stroggoilo einai giati h eikona moy den htan tetragonh */
+    width: 300px;
+    height: 300px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    border: 20px souble rgb(177, 174, 174);
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 0px 2px rgb(55, 186, 230);
+}
+
+.card {
+    width: 250px;
+    /* height: auto; */
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.card-image {
+    width: 100%;
+    opacity: 0.5;
+    height: auto;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.london-bg {
+    height: 400px;
+    border: 2px solid black;
+    background-image: url('../../images/MicrosoftTeams-image\ \(3\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+

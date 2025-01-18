@@ -1,0 +1,32 @@
+div[class^="grid"]{
+    border: 1px solid red;
+}
+.contaier-grid1{
+    margin-top: 20px;
+    /* ta periexomena soy tha apoktisoyn thn idiothta toy  */
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    /* to height me vash ta periexomena */
+    grid-auto-rows: auto;
+}
+
+.contaier-grid2{
+    margin-top: 20px;
+
+    display: grid;
+    /* bazei klasmata toy xoroy */
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+    /* h proth gramh 60 ypsos h deyterh 120 */
+    grid-template-rows: 60px 120px;
+}
+
+.contaier-grid3{
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    /* h proth 100 kai oi ypoloipes 60 */
+    grid-template-rows: 100px;
+    grid-auto-rows: 60px;
+}

@@ -1,0 +1,18 @@
+p {
+    color: blue;
+}
+/* ayta antifaskoyn kai bl;epoyme me pia seira ekteloynte an sympeftoyn */
+
+#cf-text{
+    color: aqua;
+}
+
+.cf-text{
+    color: green;
+}
+
+/* inline style > id# > class. > element */
+
+P {
+    color: green!important;
+}

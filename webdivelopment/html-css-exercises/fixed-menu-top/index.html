@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="d-flex flex-column">
+        <header class="bg-navy text-wedding">
+            <div class="header-title mt-1 mb-1 ml-1">
+                <h2>Αναπτυξη web εφαρμογών</h2>
+                <h3>HTML CSS JavaScript</h3>
+            </div>
+
+            <!-- αυτα μπηκαν για να έχω ένα hamburgermenu toggle. Θα φτιαξω ένα κρυφο checkbox που θα έχει ένα ιβεντ -->
+            <input class="side-menu" type="checkbox" id="side-menu">
+            <label  class="hamb" for="side-menu">
+                <!-- to span einai mia gramh. με αυτην θα φτιαξω το logo toy hamburger -->
+                <span class="hamb-line"></span>
+            </label>
+
+
+            <nav class="bg-blue active">
+                <ul class="d-flex flex-row flex-direction-responce w-100">
+                    <li class="list-style-none">
+                        <a class="text-wedding d-block p-1 text-none link-hover-navy"href="#html">
+                            HTML
+                        </a>
+                    </li>
+                    <li class="list-style-none">
+                        <a class="text-wedding d-block p-1 text-none link-hover-navy" href="#css">
+                            CSS
+                        </a>
+                    </li>
+                    <li class="list-style-none">
+                        <a class="text-wedding d-block p-1 text-none link-hover-navy" href="#js">
+                            JavaScript
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="bg-wedding">
+            <div class="text-center ">
+                <img class="banner-immage mt-50 mb-50" src="../../images/html5-logo.png" alt="">
+                <img class="banner-immage mt-50 mb-50" src="../../images/css3-logo.png" alt="">
+                <img class="banner-immage mt-50 mb-50" src="../../images/javascript-logo.png" alt="">
+            </div>
+
+            <section class="bg-beige" id="html">
+                <article class="p-1">
+                    <h1>What is HTML</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo at, officia necessitatibus omnis quasi accusantium dolor tenetur nesciunt ab est sit optio alias dolorum nihil iste. Nesciunt, nobis nihil.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ad iste illo eaque, sequi commodi quae totam similique, blanditiis, molestiae dolorum. Perferendis eveniet aliquid doloribus commodi dolorum quisquam asperiores id?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo ab non quis. Quasi nulla error labore commodi obcaecati ut vitae sed impedit. Autem nesciunt molestiae facere ullam veritatis laudantium.
+                    </p>
+                    
+                    <pre>
+                        <code class="w-50 bg-white border border-black d-block m-auto">
+    &lt;tag attributes="..."&gt;
+                        </code>
+                    </pre>
+                </article>
+            </section>
+
+            <section id="css">
+                <article class="p-1">
+                    <h1>What is CSS</h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam magnam aperiam voluptatum aspernatur inventore error maxime nemo dicta iure doloremque recusandae, repudiandae provident officiis adipisci modi, totam expedita voluptatibus vero!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolores cupiditate possimus dolore necessitatibus eveniet earum similique sequi delectus nulla ducimus provident sint ipsa accusamus nemo optio unde, quos sit.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore delectus, nesciunt quia mollitia officia temporibus fugit voluptates, repudiandae numquam, necessitatibus cupiditate aut veniam ipsam sint corporis ipsa itaque consectetur officiis.
+                    </p>
+                    <pre>
+                        <!-- to dblock einai to pio symantiko tag edo -->
+                        <code class="w-50 bg-white border border-black d-block m-auto">
+    p {
+        color: blue
+        text-align: center
+        border: 1px solid black;
+    }
+                        </code>
+                    </pre>
+                </article>
+            </section>
+
+            <section  class="bg-beige id-javascript">
+                <article class="p-1" id="js">
+                    <h2>What is JavaScript</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam distinctio, a deserunt et, consectetur placeat at fuga, obcaecati iure iste facere eius? Doloribus eum officia eligendi enim amet consectetur!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex qui harum repellendus unde illo dignissimos porro. Corporis sapiente placeat aliquid recusandae, quasi adipisci ab molestiae quos ullam ipsa! Veritatis, sequi?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eum voluptate aliquid, distinctio voluptatibus architecto veritatis totam quo corporis provident ipsam, voluptas eveniet omnis deleniti unde consectetur porro eius voluptatem!
+                    </p>
+                    <pre>
+                        <code class="w-50 bg-white border border-black d-block m-auto">
+    &lt;script&gt;
+        const myVariable = "Hello coding factory"
+        alert(myVariable)
+        &lt;/script&gt;
+                        </code>
+                    </pre>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

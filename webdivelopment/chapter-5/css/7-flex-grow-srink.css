@@ -1,0 +1,27 @@
+/* [class^="box"] */
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1{
+    background-color: lightblue;
+    /* den tha parei ton ypoloipo xoro, 
+    tha parei platos 100 */
+    flex: 0 0 100px;
+}
+.box2{
+    flex: 1 0 50px;
+    background-color: lightgreen;
+}
+.box3{
+    /* flex-shrink:  dhl na mhn kanei overflow */
+    flex: 0 1 1000;
+    background-color: lightcoral;
+}

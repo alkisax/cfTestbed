@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- ;exoyn ola to idio name -->
+    <form>
+        <div>
+            <input type="radio" name="gender" id="male" value="male" >
+            <label for="male">Male</label> 
+            <input type="radio" name="gender" id="female" value="female" checked>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="bicycle" value="bike">
+            <label for="bicycle">Bicycle</label>
+            <input type="checkbox" name="" id="motorcycle" value="motorcycle" checked>
+            <label for="motorcycle">motorcycle</label>
+            <input type="checkbox" name="" id="car" value="car">
+            <label for="car">car</label>
+        </div>
+        <div>
+            <label for="nationality">Υπηκοότητα</label>
+            <select name="" id="nationality">
+                <option disabled selected hidden>Επιλέξτε υπηκότητα</option>
+                <option value="greek">Ελλάδα</option>
+                <option value="english">Αγγλια</option>
+                <option value="spanish">Ισπανια</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>
+            <div>
+                <label for="firstname">Name</label>
+                <input type="text" id="firstname" placeholder="type name" required minlength="3" maxlength="10">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="type Last name">
+            </div>
+            <div>
+                <label for="workExperience">Χρονια προυπηρεσίας</label>
+                <input type="number" name="" id="workExperience">
+            </div>
+        </fieldset>
+        <div>
+            <label for="birthday">Χρονολογία γένησης</label>
+            <input type="date" name="" id="birthday">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="" id="email">
+        </div>
+        <div>
+            <input type="submit" value="υποβολή">
+            <input type="reset" value="Επαναφορά">
+        </div>
+    </form>
+</body>
+</html>

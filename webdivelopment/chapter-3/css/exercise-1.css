@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* to 100vh kai to dispaly gird kai items center parakato moy ebale to koyti sthn m;esh` */
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: gray;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    margin: 50px;
+    padding-top: 1%;
+    width: 70%;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    /* min-height: 150px; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.img1, .img2 {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.authenticate-div{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #3176B1;
+    margin-bottom: 3%;
+}
+
+.header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-text{
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+    justify-content: center;
+    font-size: .8rem;
+    margin-bottom: 3%;
+}
+
+.inside-container{
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+
+/* .password-div{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    height: 30px;
+    width: 70%;
+} */
+.user-div, .password-div{
+    margin: 0 auto;
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 3%;
+    height: 30px;
+    width: 70%;
+    margin-bottom: 7%;
+}
+
+.label1, .label2 {
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+
+input{
+    height: 30px;
+    color: white;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: lightgray;
+
+    /* display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; */
+}
+
+.button-div{
+    margin: 0 auto;
+    background-color: #3176B1;
+    color: white;
+    height: 30px;
+    width: 70%;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-bottom: 3%;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.foot{
+    text-align: center;
+    justify-content: center;
+    font-size: .8rem;
+    margin-bottom: 3%;
+}
+

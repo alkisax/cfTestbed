@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+
+footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+
+main{
+    display: flex;
+}
+
+/* sto flex h morfopoihsh prpeei na giei sta paidia kai oxi ston patera opos to grid kai ayto einai talaiporia
+ */
+
+ .column-1{
+    height: 300px;
+    /* width: 30%; */
+    /* den thimamai */
+    /* den exo pei flex wrap. ara sthn idia grammh. na moirastoyn ton xoro poy toyw analogei. na aplothoyn se olo to platow*/ 
+    flex: 1;
+    text-align: center;
+    line-height:  300px;
+    
+ }
+
+ .column-2{
+    height: 300px;
+    /* width: 30%; */
+    /* den thimamai */
+    /* den exo pei flex wrap. ara sthn idia grammh. na moirastoyn ton xoro poy toyw analogei. na aplothoyn se olo to platow*/ 
+    flex: 2;
+    text-align: center;
+    line-height:  300px;
+    
+ }
+
+ .bg-light-gray{
+    background-color: #faaa;
+ }
+ .bg-gray{
+    background-color: #bbbb;
+ }

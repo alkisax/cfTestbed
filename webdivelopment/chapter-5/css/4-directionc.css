@@ -1,0 +1,19 @@
+div[class^=box]{
+    width: 60px;
+    height: 50px;
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 5px 5px;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

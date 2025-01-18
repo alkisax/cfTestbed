@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/11-form.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Payment form</h1>
+            <!-- aria labellby ειναι για accessibility -->
+            <div aria-labelledby="payment-info" class="">
+                <h2>Personal info</h2>
+                <!-- moy ftiaxnei ena koyti plaisio kai sto legend vazo kai titlo -->
+                <fieldset>
+                    <legend>Title</legend>
+                    <div class="">
+                        <!-- sta radio prepei na balo kai value -->
+                         <!-- exoyn ola to idio title -->
+                         <div>
+                            <label for="titleMr">Mr.</label>
+                            <input type="radio" id="titleMr" name="title" value="mr">
+                        </div>
+
+                         <div>
+                            <label for="titleMrs">Mrs.</label>
+                            <input type="radio" id="titleMrs" name="title" value="mrs">
+                        </div>
+
+                        <div>
+                            <label for="titleDr">Dr.</label>
+                            <input type="radio" id="titleMr" name="title" value="dr">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="">
+                    <!-- abbr -->
+                    <label for="name"><span>Userame:<abbr title="field is required">*</abbr></span></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" >
+                </div>
+            </div>
+
+            <div class="">
+                <h2>Payment info</h2>
+
+                <div>
+                    <!-- to for kai to id idia -->
+                    <label for="card">Card type:</label>
+                    <select name="usercard" id="card">
+                        <option value="" select disabled>Select card type</option>
+                        <option value="visa">Visa</option>
+                        <option value="master">Master</option>
+                        <option value="express">Express</option>
+                    </select>
+                </div>
+
+                <div>
+                    <!-- for kai id idia -->
+                    <label for="cardnumber">Card Number</label>
+                    <input type="text" name="cardnumber" id="cardnumber">
+                </div>
+
+                <div>
+                    <!-- for kai id idia -->
+                    <label for="expiration">Expiration Date:</label>
+                    <input type="date" id="expiration" name="expiration" placeholder="MM/YY">
+                </div>
+
+                <div>
+                    <!-- onclick"submit()" -->
+                    <button type="submit">Submit</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>   
+</body>
+</html>

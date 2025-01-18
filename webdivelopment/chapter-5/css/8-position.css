@@ -1,0 +1,69 @@
+.contaier{
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* ayto egine gia to position absolout. gia na metakinithei stis συντεταγμενες εντός του πατέρα και οχι στα χ-υ του συνόλου της σελίδας */
+    position: relative;
+}
+
+.box1{
+    /* width: ;
+    height: ; */
+    border: 1px solid black;
+    padding: 80px;
+    background-color: lightblue;
+}
+
+.box2{
+    /* width: ;
+    height: ; */
+    border: 1px solid black;
+    padding: 80px;
+    background-color: lightcoral;
+}
+
+.box3{
+    /* width: ;
+    height: ; */
+    border: 1px solid black;
+    padding: 80px;
+    background-color: lightcyan;
+}
+
+.item-relative{
+    /* toy leme na metakinithi se sxesh me kati. me ti; me otn patera. dhl apo ekei poy ;htan arxika */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.item-absolut{
+    /* to pairnei kai to paei se mia sygkekrimenh thesh se syntetagmenes oloy toy browser */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-fixed{
+    /* έμεινε σε μια σταθερη σελίδα και δεν κάνει σκρόλ */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    z-index: 1;
+}
+
+.item-sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}

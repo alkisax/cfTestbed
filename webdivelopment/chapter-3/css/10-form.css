@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.outer {
+    background-color: cornflowerblue;
+    width: 40%;
+    /* pano kato 10 deksa arister auto (sthn mesh) */
+    margin: 10px auto;
+    padding: 20px 0;
+    border: radius 5px;
+    text-align: center;
+}
+.middle-rounded {
+    background-color: white;
+    /* 90 toy patera */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px, 0;
+    
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+.gap-bottom {
+    margin-bottom: 20px;
+}
+.gap-top {
+    margin-top: 20px;
+}
+
+.login-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #8c8d8d;
+}
+
+.form-input {
+    width: 80%;
+    height: 48px;
+    background-color: #fafaf4;
+    border-radius: 5px;
+    /* giati to keimeno einai sthn akrh */
+    padding-left: 10px;
+    border: 0;
+}
+
+.form-btn{
+    width: 80%;
+    height: 48px;
+    background-color: #87cede;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1.5px solid black;
+}
+
+.reset-link {
+    color: black;
+}
+
+.text-light, .account-link {
+    color: white;
+}
+
+.account-link:hover {
+    color: black;
+}

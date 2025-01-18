@@ -1,0 +1,56 @@
+/* margin apo pano. pading apo kato */
+
+/* se opoio element breis!!!*/
+/* moy to ebale sto kentro ths selidas ;h sto kentro toy parapano .container
+margin-left: auto;
+margin-right: auto; */
+
+
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /* ego tha oriso ti tha einai kai oxi to diffoult */
+ }
+
+
+.container{
+
+    width: 500px;
+    /* height: 500px; */
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+/* otan bazo padding border klp to koyti megalonei giati otan toy eipes width=200 px soy leei toso thes na einai to "periexomeno", allios  */
+
+/* an synantisei dyo padding px edo 20 parakato 40. den tha ta prosthesei tha dei to mehgalitero kai tha pei a hteles toylaxiston toso */
+.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: beige;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid red;
+    text-align: center;
+    vertical-align:auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* line-height: 200px; */
+    /* margin-bottom: 40px; */
+}
+
+.box2 {
+    width: 300px;
+    height: 200px;
+    background-color: beige;
+    border: 1px solid green;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

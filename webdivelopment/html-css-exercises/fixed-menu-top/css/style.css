@@ -1,0 +1,201 @@
+:root{
+    --white: #f9f9f9;
+    --navy: #002e94;
+    --blue: #133e9b;
+    --wedding: #ffe7cc;
+    --beige: #e1ceb5
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* links */
+.d-flex{
+    display: flex;
+}
+.w-100{
+    width: 100%;
+}
+.list-style-none{
+    list-style: none;
+}
+.d-block{
+    display: block;
+}
+.p-1{
+    padding: 1rem;
+}
+.text-none{
+    text-decoration: none;
+}
+.link-hover-navy:hover{
+    background-color: rgb(75, 75, 240);
+}
+
+.flex-column{
+    flex-direction: column;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+/* main */
+.bg-wedding{
+    background-color: var(--wedding);
+}
+.text-center{
+    text-align: center;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.banner-immage{
+    /* width: 300px; */
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* keimeno */
+.bg-beige{
+    background-color: var(--beige);
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.w-50{
+    width: 50%;
+}
+.bg-white{
+    background-color: var(--white);
+}
+.border{
+    border-width: 1px;
+    border-style: solid;
+}
+.border-black{
+    border-color: black;
+}
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* diafora xromata klp */
+.bg-navy{
+    background-color: var(--navy);
+}
+.text-wedding{
+    color: var(--wedding);
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.ml-1{
+    margin-left: 1rem;
+}
+.bg-blue{
+    color: var(--blue);
+}
+
+/* Hamb menu styling */
+.hamb-line{
+    background-color: var(--white);
+    height: 2px;
+    width: 30px;
+    /* display: block; */
+    /* αυτά για να κρυβετε οταν σελιδα μικρή */
+    display: none;
+    /* aυτο αφορα το που θα είναι το +-5 */
+    position: relative;
+}
+/* εχω φτιαξει μια γραμμή και  θελω να εχει ακομα μια πριν και μια μετα */
+.hamb-line::before,
+.hamb-line::after{
+    background-color: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* aυτο αφορα το που θα είναι το +-5 */
+    position: relative;
+    /* για την μετατροπή σε χ του transform:  */
+    transition: all .2s ease-out;
+}
+/* θελω να εμφανιστει απο πανω απο το checkbox */
+.hamb-line::before {
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu:checked ~ nav.active{
+    display: flex;
+}
+
+/* για να γινουν οι τρεις γραμες του haburger σε Χ */
+/* οταν κάνω κλικ παρε οτι υπάρχει μεσα στο τελεια .χαμπ .χαμπλ λαιν παρε το και κάνε το διαφανες. δηλαδή σβήνει την μεσαία γραμή */
+.side-menu:checked ~ .hamb .hamb-line{
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* gia na kripso to chexkbox */
+.side-menu{
+    display: none;
+}
+
+/* θελω το κουμπι να κρυβετε και να εμφανίζετε ανάλογα με το μέυεθος της σελίδαςς
+*/
+
+.hamb {
+    position: absolute;
+    top: 3rem;
+    left: 18rem;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+@media(max-width: 1000px){
+    .hamb-line{
+        display: block;
+    }
+    /* ayta gia na kribete to mmenoy */
+    .flex-direction-responce{
+        flex-direction: column;
+    }
+    nav li {
+        text-align: center;
+    }
+    nav.active{
+        display: none;
+    }
+}
