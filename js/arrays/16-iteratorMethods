@@ -1,0 +1,21 @@
+const students = ['Alice', 'adreas', 'bob', 'kostas']
+
+students.forEach((stu, index, arr) => {
+  console.log(stu, index+1, arr)
+})
+
+console.log()
+
+let filtered = students.filter(student => student === 'adreas')
+console.log(filtered)
+
+console.log()
+
+let mapped = students.map(student => "student: " + student)
+console.log(mapped)
+
+console.log()
+
+const numbers = [ 1, 6, 9, 12]
+let sum = numbers.reduce((total, val) => total + val , 0)
+console.log(sum)
