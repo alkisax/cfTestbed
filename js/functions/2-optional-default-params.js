@@ -30,4 +30,5 @@ function getFormattedDateTime(
   const now = new Date()
   return now.toLocaleString(locale, options)
 }
+console.log(getFormattedDateTime())
 console.log(getFormattedDateTime("el-GR"))
