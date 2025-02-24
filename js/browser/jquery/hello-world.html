@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="root">
+
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script>
+    $(function() {
+      sayHello()
+      sayHello2()
+      sayHello3()
+      acreateAndAPpend()
+    })
+
+    const sayHello = () => {
+      console.log("Hello");      
+    }
+
+    const sayHello2 = () => {
+      $('#root').text('Hello coding')
+    }
+
+    const sayHello3 = () => {
+      $('#root').html('<h1>Hello coding</h1>')
+    }
+
+    const acreateAndAPpend = () => {
+      $('#root').append($('<p>World</p>'))
+    }
+
+    const $p = $('<p>')
+      // $p.html('Hello world')
+      // $('body').append($p)
+      $p.html('Hello world').appendTo($p)
+
+  </script>
+</body>
+</html>
