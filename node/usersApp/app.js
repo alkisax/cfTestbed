@@ -4,7 +4,9 @@ app.use(express.json())
 
 const user = require('./routes/user.routs')
 const userProduct = require('./routes/user.products.routes')
+const auth = require('./routes/auth.roots')
 app.use('/api/users', user)
 app.use('/api/user-product', userProduct)
+app.use('/api/auth', auth)
 
 module.exports = app
