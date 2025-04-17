@@ -55,8 +55,11 @@ exports.create = async (req,res) => {
   console.log("Create user");
   let data = req.body
   const SaltOrRounds = 10
-  const hashedPassword = await bcrypt.hash(data.password, SaltOrRounds)
-
+  
+  let hashedPassword = "";
+  if (data.password)
+    hashedPassword = await bcrypt.hash(data.password, SaltOrRounds)
+  
   const newUser = new User ({
     username: data.username,
     password: hashedPassword,
@@ -76,7 +79,7 @@ exports.create = async (req,res) => {
     })
   } catch (err) {
     console.log("problem in creating user", err)    
-    res.status(404).json({
+    res.status(400).json({
       status: false,
       data: err
     })
