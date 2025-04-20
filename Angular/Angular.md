@@ -111,6 +111,63 @@ npm run deploy
 ```
 και αν πάω στην σελίδα το βλέπω
 
+# αρχίζουμε την εφαρμογή
+θέλω να περάσω απο το component (που είναι ο controller μου) στο html (που είναι το template μου). Αυτή είναι η λογική του angular
+
+### στο components.ts
+```typescript
+export class AppComponent {
+  name = 'Alkis'
+
+  person = {
+    givenName: "Alkis",
+    surName: "kopakakis",
+    age: 44,
+    email: 'alkisax@gmail.com'
+  }
+}
+```
+
+### την μεταβλητή στο html
+```
+{{ name }}
+{{person.givenName}}
+{{person.surName}}
+{{person.age}}
+```
+και
+```bash
+ng serve
+```
+
+### δημιουργία νέου component
+
+```bash
+ng generate component components/person-table
+```
+αφού φτιάξω την TS του Component καλώ με {{}} οτι χρειάζετε απο αυτό στο αντίστοιχο html του component
+
+στο app.component.ts
+```typescript
+import { PersonTableComponent } from './components/person-table/person-table.component';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, PersonTableComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+```
+
+στο κεντρικό μου app.component.html
+```html
+<div class="d-flex gap-5 text-nowrap">
+  <app-person-table></app-person-table>
+</div>
+```
+
+
+
 
 
 
