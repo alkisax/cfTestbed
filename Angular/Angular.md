@@ -85,7 +85,31 @@ npm install --save-dev prettier
 ```
 
 # github pages
+git init κάνει απο μόνο του το Angular
+```bash
+git remote add origin git@github.com:alkisax/cf7-angular-introduction.git
+git push -u origin main
 
+ng add angular-cli-ghpages
+
+```
+
+## package.json
+οταν τρέξουμε το deploy ανεβάζει αυτό που κάνει build στην σελίδα που δίνουμε
+```
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=https://alkisax.github.io/cf7-angular-introduction/"
+  },
+```
+```bash
+npm run deploy
+```
+και αν πάω στην σελίδα το βλέπω
 
 
 
