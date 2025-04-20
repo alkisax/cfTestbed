@@ -166,6 +166,8 @@ import { PersonTableComponent } from './components/person-table/person-table.com
 </div>
 ```
 
+και με npm run deploy ανεβένει και στο github page
+
 
 
 
